@@ -8,6 +8,8 @@ co/edu/unimagdalena/apmoviles/universidad/BaseDatos.java
  co.edu.unimagdalena.apmoviles.universidad.BaseDatos
 co/edu/unimagdalena/apmoviles/universidad/HotelCursorAdapter.java
  co.edu.unimagdalena.apmoviles.universidad.HotelCursorAdapter
+co/edu/unimagdalena/apmoviles/universidad/HotelController.java
+ co.edu.unimagdalena.apmoviles.universidad.HotelController
 co/edu/unimagdalena/apmoviles/universidad/EdicionActivity.java
  co.edu.unimagdalena.apmoviles.universidad.EdicionActivity
  co.edu.unimagdalena.apmoviles.universidad.EdicionActivity$1
@@ -19,5 +21,3 @@ co/edu/unimagdalena/apmoviles/universidad/ListadoActivity.java
  co.edu.unimagdalena.apmoviles.universidad.ListadoActivity$2
 co/edu/unimagdalena/apmoviles/universidad/MainActivity.java
  co.edu.unimagdalena.apmoviles.universidad.MainActivity
-co/edu/unimagdalena/apmoviles/universidad/HotelController.java
- co.edu.unimagdalena.apmoviles.universidad.HotelController

@@ -20,7 +20,7 @@
         android:id="@+id/svfilter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Busca por Departam, Ciudad y #Estrellas">
+        android:queryHint="Busca por Depart, Ciudad y #Estrellas">
 
         <requestFocus />
     </SearchView>
