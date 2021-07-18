@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } finally {
             cursor.close();
         }
-
+        //Ahora para que se mueva a Santa Marta por defecto al abrirlo
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.234276, -74.194580), 13 ));
 
     }
