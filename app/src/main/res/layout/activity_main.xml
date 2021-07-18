@@ -24,7 +24,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
-                app:srcCompat="@drawable/ic_launcher_background" />
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/icon_maps" />
 
 
             <EditText
@@ -120,7 +121,7 @@
                 android:background="@drawable/custom_input"
                 android:ems="10"
                 android:hint="Latitud"
-                android:inputType="number"
+                android:inputType="numberSigned|numberDecimal"
                 android:paddingVertical="10dp"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
@@ -134,7 +135,7 @@
                 android:background="@drawable/custom_input"
                 android:ems="10"
                 android:hint="Longitud"
-                android:inputType="number"
+                android:inputType="numberSigned|numberDecimal"
                 android:paddingVertical="10dp"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
@@ -172,7 +173,7 @@
             <android.widget.Space
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:layout_height="0dp" />
+                android:layout_height="10dp" />
 
         </LinearLayout>
 

@@ -21,8 +21,8 @@ package co.edu.unimagdalena.apmoviles.universidad;
                 DefBD.col_estrellas + " integer," +
                 DefBD.col_ciudad + " text," +
                 DefBD.col_direccion + " text," +//nuevo
-                DefBD.col_latitud + " integer," +//nuevo
-                DefBD.col_longitud + " integer" +//nuevo
+                DefBD.col_latitud + " real," +//nuevo
+                DefBD.col_longitud + " real" +//nuevo
                 ");";
 
 

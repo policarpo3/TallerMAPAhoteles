@@ -11,16 +11,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Hotel e;
-    HotelController ec;
+    Hotel hotel;
+    HotelController hotelController;
     EditText ciudad, nombre, departamento, estrellas, txtid, direccion, latitud, longitud;//4 nuevos
-    Button agregar, mostrar;
+    Button agregar, mostrar, mapa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         agregar = findViewById(R.id.btnguardar);
         mostrar = findViewById(R.id.btnlistado);
+        mapa = findViewById(R.id.btnvermapa);
 
         txtid = findViewById(R.id.edtcodigo);//nuevo
         ciudad = findViewById(R.id.edtciudad);
@@ -33,7 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         agregar.setOnClickListener(this);
         mostrar.setOnClickListener(this);
-        ec = new HotelController(this);
+        mapa.setOnClickListener(this);
+
+        hotelController = new HotelController(this);
     }
 
     @Override
@@ -47,15 +50,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this,"No pueden haber casillas vacias", Toast.LENGTH_LONG).show();
 
                }else{
-                    e = new Hotel(Integer.parseInt(txtid.getText().toString()), nombre.getText().toString(), departamento.getText().toString(), ciudad.getText().toString(),
+                    hotel = new Hotel(Integer.parseInt(txtid.getText().toString()), nombre.getText().toString(), departamento.getText().toString(), ciudad.getText().toString(),
                             Integer.parseInt(estrellas.getText().toString()),
-                            direccion.getText().toString(), Integer.parseInt(latitud.getText().toString()), Integer.parseInt(longitud.getText().toString()) );//3 nuevos + el id
+                            direccion.getText().toString(), latitud.getText().toString(), longitud.getText().toString());//3 nuevos + el id
                     //Crea un nuevo hotel e, pero sin ingresarlo aun a la base de datos
-                    if (ec.buscarHotel(e)){//si no encontro el hotel, es decir sino estaba repetido, como busca por id
+                    if (hotelController.buscarHotel(hotel)){//si no encontro el hotel, es decir sino estaba repetido, como busca por id
                         Toast.makeText(this,"Código ya existe", Toast.LENGTH_LONG).show();
                     }
                     else{            //si quedo listo para crear
-                        ec.agregarHotel(e);//Se agrega el nuevo hotel
+                        hotelController.agregarHotel(hotel);//Se agrega el nuevo hotel
                         //y luego se reinician los editText para que se muestren limpios de nuevo
                         txtid.setText("");//nuevo
                         nombre.setText("");
@@ -73,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.btnvermapa:
-                Intent j = new Intent(this, ListadoActivity.class);// cambiar aqui para moverse
+                Intent j = new Intent(this, MapsActivity.class);
                 startActivity(j);
                 break;
         }

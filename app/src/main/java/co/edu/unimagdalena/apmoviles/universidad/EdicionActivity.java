@@ -88,13 +88,13 @@ public class EdicionActivity extends AppCompatActivity {
                     imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                     //Fin ocultar teclado cuando hay una view
                 }else {
-                    Hotel e = new Hotel(Integer.parseInt(txtid.getText().toString()), nombre.getText().toString(), departamento.getText().toString(),
+                    Hotel hotel = new Hotel(Integer.parseInt(txtid.getText().toString()), nombre.getText().toString(), departamento.getText().toString(),
                             ciudad.getText().toString(), Integer.parseInt(estrellas.getText().toString()),
-                            direccion.getText().toString(), Integer.parseInt(latitud.getText().toString()), Integer.parseInt(longitud.getText().toString()));
+                            direccion.getText().toString(), latitud.getText().toString(), longitud.getText().toString());
                     //la sgt linea solo va si en el creador de hotel no lleva el parametro ID
                     //e.setId(Integer.parseInt(txtid.getText().toString()));
-                    HotelController ec = new HotelController(getApplication());
-                    ec.actualizarHotel(e);
+                    HotelController hotelController = new HotelController(getApplication());
+                    hotelController.actualizarHotel(hotel);
                     Intent i = new Intent(getApplicationContext(), ListadoActivity.class);
                     startActivity(i);
                     finish();

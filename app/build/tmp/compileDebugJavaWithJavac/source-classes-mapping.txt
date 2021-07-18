@@ -1,15 +1,21 @@
-co/edu/unimagdalena/apmoviles/universidad/DefBD.java
- co.edu.unimagdalena.apmoviles.universidad.DefBD
-co/edu/unimagdalena/apmoviles/universidad/Hotel.java
- co.edu.unimagdalena.apmoviles.universidad.Hotel
+co/edu/unimagdalena/apmoviles/universidad/databinding/ActivityListadoBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.ActivityListadoBinding
 co/edu/unimagdalena/apmoviles/universidad/BuildConfig.java
  co.edu.unimagdalena.apmoviles.universidad.BuildConfig
-co/edu/unimagdalena/apmoviles/universidad/BaseDatos.java
- co.edu.unimagdalena.apmoviles.universidad.BaseDatos
-co/edu/unimagdalena/apmoviles/universidad/HotelCursorAdapter.java
- co.edu.unimagdalena.apmoviles.universidad.HotelCursorAdapter
-co/edu/unimagdalena/apmoviles/universidad/HotelController.java
- co.edu.unimagdalena.apmoviles.universidad.HotelController
+co/edu/unimagdalena/apmoviles/universidad/databinding/ActivityMainBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.ActivityMainBinding
+co/edu/unimagdalena/apmoviles/universidad/databinding/ActivityMapsBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.ActivityMapsBinding
+co/edu/unimagdalena/apmoviles/universidad/Hotel.java
+ co.edu.unimagdalena.apmoviles.universidad.Hotel
+co/edu/unimagdalena/apmoviles/universidad/databinding/ActivityEdicionBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.ActivityEdicionBinding
+co/edu/unimagdalena/apmoviles/universidad/databinding/FilaHotelBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.FilaHotelBinding
+co/edu/unimagdalena/apmoviles/universidad/databinding/CustomInfowindowBinding.java
+ co.edu.unimagdalena.apmoviles.universidad.databinding.CustomInfowindowBinding
+co/edu/unimagdalena/apmoviles/universidad/DefBD.java
+ co.edu.unimagdalena.apmoviles.universidad.DefBD
 co/edu/unimagdalena/apmoviles/universidad/EdicionActivity.java
  co.edu.unimagdalena.apmoviles.universidad.EdicionActivity
  co.edu.unimagdalena.apmoviles.universidad.EdicionActivity$1
@@ -21,3 +27,12 @@ co/edu/unimagdalena/apmoviles/universidad/ListadoActivity.java
  co.edu.unimagdalena.apmoviles.universidad.ListadoActivity$2
 co/edu/unimagdalena/apmoviles/universidad/MainActivity.java
  co.edu.unimagdalena.apmoviles.universidad.MainActivity
+co/edu/unimagdalena/apmoviles/universidad/HotelCursorAdapter.java
+ co.edu.unimagdalena.apmoviles.universidad.HotelCursorAdapter
+co/edu/unimagdalena/apmoviles/universidad/MapsActivity.java
+ co.edu.unimagdalena.apmoviles.universidad.MapsActivity
+ co.edu.unimagdalena.apmoviles.universidad.MapsActivity$1
+co/edu/unimagdalena/apmoviles/universidad/BaseDatos.java
+ co.edu.unimagdalena.apmoviles.universidad.BaseDatos
+co/edu/unimagdalena/apmoviles/universidad/HotelController.java
+ co.edu.unimagdalena.apmoviles.universidad.HotelController

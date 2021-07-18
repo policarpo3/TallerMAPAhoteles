@@ -8,10 +8,10 @@ public class Hotel {
     private String nombre;
     private int estrellas;
     private String direccion;
-    private int latitud;
-    private int longitud;
+    private String latitud;
+    private String longitud;
 
-    public Hotel(int id, String nombre, String departamento, String ciudad, int estrellas, String direccion, int latitud, int longitud) {
+    public Hotel(int id, String nombre, String departamento, String ciudad, int estrellas, String direccion, String latitud, String longitud) {
         this.id = id;//nuevo
         this.departamento = departamento;
         this.nombre = nombre;
@@ -70,19 +70,19 @@ public class Hotel {
         this.direccion = direccion;
     }
 
-    public int getLatitud() {
+    public String getLatitud() {
         return latitud;
     }
 
-    public void setLatitud(int latitud) {
+    public void setLatitud(String latitud) {
         this.latitud = latitud;
     }
 
-    public int getLongitud() {
+    public String getLongitud() {
         return longitud;
     }
 
-    public void setLongitud(int longitud) {
+    public void setLongitud(String longitud) {
         this.longitud = longitud;
     }
 

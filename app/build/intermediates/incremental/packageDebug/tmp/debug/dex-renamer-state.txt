@@ -1,9 +1,9 @@
-#Sun Jul 18 00:36:15 COT 2021
-base.2=D\:\\GitHub\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+#Sun Jul 18 14:35:16 COT 2021
+base.2=C\:\\Users\\Christian\\Documents\\Christian\\Proyectos\\Android\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
 path.2=11/classes.dex
-base.1=D\:\\GitHub\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Christian\\Documents\\Christian\\Proyectos\\Android\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=D\:\\GitHub\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=C\:\\Users\\Christian\\Documents\\Christian\\Proyectos\\Android\\TallerMAPAhoteles\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

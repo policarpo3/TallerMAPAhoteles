@@ -16,16 +16,16 @@ public class HotelController {
     public void agregarHotel(Hotel e){
         try {
             SQLiteDatabase sql = bd.getWritableDatabase();
-            ContentValues valores = new ContentValues();
-            valores.put(DefBD.col_id, e.getId());//Nuevo
-            valores.put(DefBD.col_estrellas, e.getEstrellas());
-            valores.put(DefBD.col_nombre, e.getNombre());
-            valores.put(DefBD.col_departamento, e.getDepartamento());
-            valores.put(DefBD.col_ciudad, e.getCiudad());
-            valores.put(DefBD.col_direccion, e.getDireccion());//nuevo
-            valores.put(DefBD.col_latitud, e.getLatitud());//nuevo
-            valores.put(DefBD.col_longitud, e.getLongitud());//nuevo
-            long id = sql.insert(DefBD.tabla_hotel, null, valores);
+            ContentValues values = new ContentValues();
+            values.put(DefBD.col_id, e.getId());//Nuevo
+            values.put(DefBD.col_estrellas, e.getEstrellas());
+            values.put(DefBD.col_nombre, e.getNombre());
+            values.put(DefBD.col_departamento, e.getDepartamento());
+            values.put(DefBD.col_ciudad, e.getCiudad());
+            values.put(DefBD.col_direccion, e.getDireccion());//nuevo
+            values.put(DefBD.col_latitud, e.getLatitud());//nuevo
+            values.put(DefBD.col_longitud, e.getLongitud());//nuevo
+            long id = sql.insert(DefBD.tabla_hotel, null, values);
             //sql.execSQL("insert into " + DefBD.tabla_est + " values (" + e.getCodigo() + "," + e.getNombre() + "," + e.getPrograma() +");");
             Toast.makeText(c, "Hotel registrado", Toast.LENGTH_LONG).show();
         }
