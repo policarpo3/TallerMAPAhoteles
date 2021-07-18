@@ -117,7 +117,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Latitud"
-        android:inputType="number"
+        android:inputType="numberSigned|numberDecimal"
         android:paddingVertical="10dp"
         android:paddingLeft="10dp"
         android:textSize="20sp" />
@@ -131,7 +131,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Longitud"
-        android:inputType="number"
+        android:inputType="numberSigned|numberDecimal"
         android:paddingVertical="10dp"
         android:paddingLeft="10dp"
         android:textSize="20sp" />
