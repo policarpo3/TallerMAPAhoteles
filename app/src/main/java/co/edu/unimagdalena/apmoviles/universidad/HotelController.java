@@ -17,10 +17,14 @@ public class HotelController {
         try {
             SQLiteDatabase sql = bd.getWritableDatabase();
             ContentValues valores = new ContentValues();
+            valores.put(DefBD.col_id, e.getId());//Nuevo
             valores.put(DefBD.col_estrellas, e.getEstrellas());
             valores.put(DefBD.col_nombre, e.getNombre());
-            valores.put(DefBD.col_pais, e.getPais());
+            valores.put(DefBD.col_departamento, e.getDepartamento());
             valores.put(DefBD.col_ciudad, e.getCiudad());
+            valores.put(DefBD.col_direccion, e.getDireccion());//nuevo
+            valores.put(DefBD.col_latitud, e.getLatitud());//nuevo
+            valores.put(DefBD.col_longitud, e.getLongitud());//nuevo
             long id = sql.insert(DefBD.tabla_hotel, null, valores);
             //sql.execSQL("insert into " + DefBD.tabla_est + " values (" + e.getCodigo() + "," + e.getNombre() + "," + e.getPrograma() +");");
             Toast.makeText(c, "Hotel registrado", Toast.LENGTH_LONG).show();
@@ -46,7 +50,7 @@ public class HotelController {
         }
     }
 
-    public Cursor allHoteles(){
+    public Cursor allHoteles(){// para el listado pero no utilizado
         try{
             SQLiteDatabase sql = bd.getReadableDatabase();
  Cursor c = sql.query(DefBD.tabla_hotel,null,null,null,null,null,null);
@@ -58,10 +62,10 @@ public class HotelController {
         }
     }
 
-    public Cursor allHoteles2(){
+    public Cursor allHoteles2(){//para el listado
         try{
             SQLiteDatabase sql = bd.getReadableDatabase();
-            Cursor cur = sql.rawQuery("select id as _id , nombre, pais, ciudad, estrellas from hotel", null);
+            Cursor cur = sql.rawQuery("select id as _id , nombre, departamento, ciudad, estrellas, direccion, latitud, longitud from hotel", null);
             return cur;
         }
         catch (Exception ex){
@@ -87,10 +91,14 @@ public class HotelController {
             SQLiteDatabase sql = bd.getReadableDatabase();
             String[] args = {""+e.getId()};
             ContentValues valores = new ContentValues();
+            //como el id no se modifica aqui no va lo de id
             valores.put(DefBD.col_nombre, e.getNombre());
-            valores.put(DefBD.col_pais, e.getPais());
+            valores.put(DefBD.col_departamento, e.getDepartamento());
             valores.put(DefBD.col_ciudad, e.getCiudad());
             valores.put(DefBD.col_estrellas, e.getEstrellas());
+            valores.put(DefBD.col_direccion, e.getDireccion());//nuevo
+            valores.put(DefBD.col_latitud, e.getLatitud());//nuevo
+            valores.put(DefBD.col_longitud, e.getLongitud());//nuevo
             sql.update(DefBD.tabla_hotel,valores,"id=?",args);
             Toast.makeText(c, "Hotel actualizado", Toast.LENGTH_LONG).show();
         }
@@ -101,8 +109,8 @@ public class HotelController {
 
     public Cursor filtrarHotel(CharSequence filtro){
         SQLiteDatabase sql = bd.getWritableDatabase();
-        String query = "SELECT id as _id, nombre, pais, ciudad, estrellas FROM hotel "
-                + "where pais like '%" + filtro + "%' or ciudad like '%" + filtro + "%' or estrellas like '%" + filtro + "%'"
+        String query = "SELECT id as _id, nombre, departamento, ciudad, estrellas, direccion, latitud, longitud FROM hotel "
+                + "where departamento like '%" + filtro + "%' or ciudad like '%" + filtro + "%' or estrellas like '%" + filtro + "%'"
                 + "ORDER BY nombre ASC";
 
         return  sql.rawQuery(query, null);

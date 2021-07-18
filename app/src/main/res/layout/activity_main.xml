@@ -23,9 +23,23 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="83dp"
                 app:srcCompat="@drawable/ic_launcher_background" />
 
+
+            <EditText
+                android:id="@+id/edtcodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Codigo"
+                android:inputType="number"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/edtnombre"
@@ -42,17 +56,17 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/edtpais"
+                android:id="@+id/edtdepartamento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="País"
-                android:background="@drawable/custom_input"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp"
-                android:paddingVertical="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Departamento"
+                android:inputType="textPersonName"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
                 android:textSize="20sp" />
 
             <EditText
@@ -73,25 +87,67 @@
                 android:id="@+id/edtestrellas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="Estrellas"
-                android:background="@drawable/custom_input"
-                android:paddingLeft="10dp"
-                android:paddingVertical="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Estrellas"
+                android:inputType="number"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Direccion"
+                android:inputType="textPersonName"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtlatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Latitud"
+                android:inputType="number"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtlongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Longitud"
+                android:inputType="number"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
                 android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnguardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_rounded"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:text="@string/guardar" />
+                android:background="@drawable/button_rounded"
+                android:text="registrar hotel"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btnlistado"
@@ -103,16 +159,20 @@
                 android:textColor="@color/white"
                 android:text="@string/listado" />
 
+            <Button
+                android:id="@+id/btnvermapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_rounded"
+                android:text="ver mapa"
+                android:textColor="@color/white" />
+
             <android.widget.Space
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_launcher_background" />
 
         </LinearLayout>
 

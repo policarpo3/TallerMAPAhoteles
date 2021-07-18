@@ -17,20 +17,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:text="Codigo: "
             android:textColor="@color/black"
-            android:text="Id: "/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Nombre"
             android:background="@drawable/custom_input"
-            android:textSize="20sp"/>
+            android:ems="10"
+            android:hint="Codigo"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -52,18 +52,18 @@
 
 
     <EditText
-        android:id="@+id/edtpais"
+        android:id="@+id/edtdepartamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="País"
-        android:background="@drawable/custom_input"
-        android:paddingLeft="10dp"
-        android:paddingVertical="10dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Departamento"
+        android:inputType="textPersonName"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp" />
 
 
     <EditText
@@ -92,6 +92,48 @@
         android:paddingVertical="10dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtdireccion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtlatitud2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Latitud"
+        android:inputType="number"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtlongitud2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Longitud"
+        android:inputType="number"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
         android:textSize="20sp" />
 
     <Button
@@ -123,4 +165,11 @@
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:text="REGRESAR" />
+
+    <TextView
+        android:id="@+id/textViewMensajeError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#F60202" />
 </LinearLayout>

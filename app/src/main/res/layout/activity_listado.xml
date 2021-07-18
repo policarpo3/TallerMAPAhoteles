@@ -8,19 +8,29 @@
     android:background="@color/white"
     tools:context=".ListadoActivity">
 
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione uno para consultar y/o modificar"
+        android:textAlignment="center"
+        android:textColor="#030FFD" />
+
     <SearchView
         android:id="@+id/svfilter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="Busca por País, Ciudad y #Estrellas">
-        <requestFocus/>
+        android:queryHint="Busca por Departam, Ciudad y #Estrellas">
+
+        <requestFocus />
     </SearchView>
 
     <ListView
         android:id="@+id/lstlistado"
         android:paddingTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+    </ListView>
 
 </LinearLayout>
