@@ -64,10 +64,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 v.setLayoutParams(new RelativeLayout.LayoutParams(500, RelativeLayout.LayoutParams.WRAP_CONTENT));
 
+                TextView title = (TextView) v.findViewById(R.id.marker_title);
                 TextView description = (TextView) v.findViewById(R.id.marker_description);
-                TextView name = (TextView) v.findViewById(R.id.marker_title);
 
-                name.setText(marker.getTitle());
+                title.setText(marker.getTitle());
                 description.setText(marker.getSnippet());
 
                 return v;
